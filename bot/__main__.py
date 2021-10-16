@@ -54,7 +54,8 @@ This bot can mirror all your links to Google Drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Support Group", "https://telegram.dog/cloudsmirror")
+    buttons.buildbutton("Owner", "@DI_TWA")
+    buttons.buildbutton("Support Group", "https://t.me/BeastCloudOfficial")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     uptime = get_readable_time((time.time() - botStartTime))
@@ -182,24 +183,24 @@ def bot_help(update, context):
 
 
 botcmds = [
-BotCommand(f'{BotCommands.MirrorCommand}', 'Start Mirroring'),
-BotCommand(f'{BotCommands.TarMirrorCommand}','Upload tar (zipped) file'),
-BotCommand(f'{BotCommands.UnzipMirrorCommand}','Extract files'),
-BotCommand(f'{BotCommands.CloneCommand}','Copy file/folder to Drive'),
-BotCommand(f'{BotCommands.CountCommand}','Count file/folder of Drive link'),
-BotCommand(f'{BotCommands.WatchCommand}','Mirror YT-DL support link'),
-BotCommand(f'{BotCommands.TarWatchCommand}','Mirror Youtube playlist link as tar'),
-BotCommand(f'{BotCommands.CancelMirror}','Cancel a task'),
-BotCommand(f'{BotCommands.CancelAllCommand}','Cancel all tasks'),
-BotCommand(f'{BotCommands.DeleteCommand}','Delete file from Drive'),
-BotCommand(f'{BotCommands.ListCommand}',' [query] Searches files in Drive'),
-BotCommand(f'{BotCommands.StatusCommand}','Get Mirror Status message'),
-BotCommand(f'{BotCommands.StatsCommand}','Bot Usage Stats'),
-BotCommand(f'{BotCommands.HelpCommand}','Get Detailed Help'),
-BotCommand(f'{BotCommands.MediaInfoCommand}','Get detailed info about replied media'),
-BotCommand(f'{BotCommands.SpeedCommand}','Check Speed of the host'),
-BotCommand(f'{BotCommands.LogCommand}','Bot Log [owner/sudo only]'),
-BotCommand(f'{BotCommands.RestartCommand}','Restart bot [owner/sudo only]')]
+BotCommand(f'{BotCommands.Mirror1Command}', 'Start Mirroring'),
+BotCommand(f'{BotCommands.TarMirror1Command}','Upload tar (zipped) file'),
+BotCommand(f'{BotCommands.UnzipMirror1Command}','Extract files'),
+BotCommand(f'{BotCommands.Clone1Command}','Copy file/folder to Drive'),
+BotCommand(f'{BotCommands.Count1Command}','Count file/folder of Drive link'),
+BotCommand(f'{BotCommands.Watch1Command}','Mirror YT-DL support link'),
+BotCommand(f'{BotCommands.TarWatch1Command}','Mirror Youtube playlist link as tar'),
+BotCommand(f'{BotCommands.Cancel1Mirror}','Cancel a task'),
+BotCommand(f'{BotCommands.CancelAll1Command}','Cancel all tasks'),
+BotCommand(f'{BotCommands.Delete1Command}','Delete file from Drive'),
+BotCommand(f'{BotCommands.List1Command}',' [query] Searches files in Drive'),
+BotCommand(f'{BotCommands.Status1Command}','Get Mirror Status message'),
+BotCommand(f'{BotCommands.Stats1Command}','Bot Usage Stats'),
+BotCommand(f'{BotCommands.Help1Command}','Get Detailed Help'),
+BotCommand(f'{BotCommands.MediaInfo1Command}','Get detailed info about replied media'),
+BotCommand(f'{BotCommands.Speed1Command}','Check Speed of the host'),
+BotCommand(f'{BotCommands.Log1Command}','Bot Log [owner/sudo only]'),
+BotCommand(f'{BotCommands.Restart1Command}','Restart bot [owner/sudo only]')]
 
 
 def main():
